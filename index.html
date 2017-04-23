@@ -16,36 +16,40 @@
         <div class="large-12 columns">
             <!-- Mobile Navigation -->
             <div class="title-bar" data-responsive-toggle="nav-menu" data-hide-for="medium">
-                <a class="logo-small show-for-small-only" href="#">
-                    <!-- <object data="img/logo_navbar.svg" height="50%" width="50%" type="image/svg+xml"></object> -->
-                </a>
                 <button class="menu-icon" type="button" data-toggle></button>
                 <div class="title-bar-title"><img src="img/logo_navbar.png" height="50%" width="50%" /></div>
             </div>
             <!-- Navigation Logo -->
             <nav class="top-bar" id="nav-menu">
                 <!-- Nav Links Section -->
-                <div class="logo-wrapper hide-for-small-only top-bar-left">
-                    <div class="logo">
-                        <img src="img/logo_navbar.png" height="100%" width="100%" />
-                    </div>
+                <div class="top-bar-left">
+                    <ul class="menu">
+                        <li class="logo-wrapper hide-for-small-only ">
+                            <div class="logo">
+                                <img src="img/logo_navbar.png" />
+                            </div>
+                        </li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">VISION</a></li>
+                        <li><a href="#">TEAM</a></li>
+                        <li><a href="#">NEWS</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
                 </div>
-                <ul class="menu top-bar-right">
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">VISION</a></li>
-                    <li><a href="#">TEAM</a></li>
-                    <li><a href="#">NEWS</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i>
-          </a></li>
-                    <li class="border-left"><a href="#">ESP</a></li>
-                    <li class="border-left"><a href="#">EN</a></li>
-                </ul>
+
+                <div class="top-bar-right">
+                    <ul class="menu">
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                        <li class="border-left">
+                            <a href="#">ESP</a>
+                        </li>
+                        <li class="border-left">
+                            <a href="#">EN</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
-        </div>
-        <div class="main-logo">
-            <img src="img/logo_header.png" height="100%" width="100%" />
         </div>
     </div>
 
@@ -110,8 +114,11 @@
     </div>
 
     <div class="section-three">
-        <div class="row form-background">
-            <div class="large-12 medium-12 columns">
+        <div class="row">
+            <div class="medium-1 columns">
+                <p></p>
+            </div>
+            <div class="large-12 medium-10 columns form-background">
                 <h1>SIGN UP FOR OUR <strong>BETA</strong></h1>
                 <div class="row">
                     <div class="large-3 medium-3 columns">
@@ -119,10 +126,10 @@
                     </div>
                     <div class="large-6 medium-6 columns select-margin-bottom" type="text">
                         <div class="row">
-                            <div class="large-4 medium-4 small-4 columns">
-                                <p class="right inline">I'm a</p>
+                            <div class="large-4 medium-4 small-5 columns">
+                                <p class="right inline">I'm a/an</p>
                             </div>
-                            <div class="large-8 medium-8 small-8 columns">
+                            <div class="large-8 medium-8 small-7 columns">
                                 <select>
                                   <option>Developer</option>
                                   <option>Designer</option>
@@ -145,7 +152,7 @@
                     </div>
                     <div class="large-6 medium-6 columns">
                         <input type="text" id="last-name" placeholder="Last Name">
-                        <input type="text" id="company" placeholder="Company(Optional)">
+                        <input type="text" id="company" placeholder="Company (Optional)">
                     </div>
                 </div>
                 <div class="row">
@@ -162,40 +169,37 @@
                     </div>
                 </div>
             </div>
+            <div class="medium-1 columns">
+                <p></p>
+            </div>
         </div>
     </div>
 
-    <div class="footer-background scrollme">
-        <div class="row">
-            <div class="large-12 medium-12">
-                <footer>
-                    <ul class="vertical medium-horizontal menu">
-                        <li>
-                            <img class="logo-footer" src="img/logo_footer.png" />
-                        </li>
-                        <li>
-                            <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
-                        </li>
-                        <li>
-                            <span>555 555 5555</span>
-                        </li>
-                        <li>
-                            <img class="hand animateme" data-when="enter" data-from="0.8" data-to="0" data-translatey="-100" src="img/hand.png" width="100%" height="100%" />
-                        </li>
-                        <li>
-                            <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
-                        </li>
-                        <li>
-                            <span>info@webuildmonster.io</span>
-                        </li>
-                        <li>
-                            <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
-                        </li>
-                        <li>
-                            <span>3423 Piedmont Rd NE.<br />Atlanta, GA 30305</span>
-                        </li>
-                    </ul>
-                </footer>
+    <div class="footer-background">
+        <div class="row footer-menu">
+            <div class="large-4 medium-4 column footer-margin">
+                <div class="row">
+                    <div class="large-6 medium-12 column footer-block">
+                        <img class="logo-footer" src="img/logo_footer.png" />
+                    </div>
+                    <div class="large-6 medium-12 column footer-block">
+                        <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+                        <span>&nbsp;555 555 5555</span>
+                    </div>
+                </div>
+            </div>
+            <div class="large-3 medium-3 column">
+                <img class="hand" src="img/hand.png" />
+            </div>
+            <div class="large-5 medium-5 column footer-margin">
+                <div class="row">
+                    <div class="large-6 medium-12 column footer-block">
+                        <i class="fa fa-envelope fa-2x" aria-hidden="true"></i><span>&nbsp;info@webuildmonster.io</span>
+                    </div>
+                    <div class="large-6 medium-12 column footer-block">
+                        <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i><span>&nbsp;3423 Piedmont Rd NE.<br />Atlanta, GA 30305</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
