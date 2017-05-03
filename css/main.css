@@ -29,9 +29,12 @@ body {
 
 /***************************Navigation****************************/
 
-nav {
+nav#nav-menu {
     border: #ccffff 1px solid;
     margin-top: 1.5rem;
+    font-weight: bold;
+    height: 3.5em;
+    text-align: center;
 }
 
 .menu>li>a {
@@ -43,17 +46,16 @@ nav {
     border-left: #ccffff 1px solid;
 }
 
-.top-bar {
-    background-color: transparent;
-    text-align: center;
-}
-
-.top-bar ul {
+.top-bar, .top-bar ul {
     background-color: transparent;
 }
 
 .top-bar-right .menu>li>a {
     padding: .7rem 0.1rem;
+}
+
+.center .menu {
+    display: inline-block;
 }
 
 
@@ -87,10 +89,10 @@ nav {
         padding-right: 15px;
     }
     .top-bar-right ul {
-        float: left;
+        float: right;
     }
     .top-bar-left ul {
-        float: right;
+        float: left;
     }
 }
 
