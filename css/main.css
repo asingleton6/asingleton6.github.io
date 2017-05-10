@@ -122,12 +122,9 @@ a .fa.fa-facebook {
 /***************************Header****************************/
 
 header {
-  position: relative;
-  overflow-y: hidden;
-  z-index: 1;
   background: url(../img/header_background.png);
-  background-size: 100%;
   background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 
@@ -141,8 +138,59 @@ header {
   }
 }
 
+
+/*Change the background for larger screens*/
+
+@media only screen and (min-width: 1600px) {
+  header {
+    background: url(../img/header_large_screen.png);
+    background-size: 100%;
+    /*background-position: center center;*/
+    background-repeat: no-repeat;
+  }
+}
+
 header .container {
-  height: 84rem;
+  height: 100%;
+  /*height: 67rem;*/
+  text-align: center;
+}
+
+.button-wrapper {
+  padding-top: 60%;
+  padding-bottom: 20%;
+}
+
+.btn-primary {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.5rem 6rem;
+  color: #53c0ab;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+  color: #53c0ab;
+  background-color: #ccffff;
+  border-color: #ccffff;
+}
+
+.btn-primary:select {
+  color: #53c0ab;
+  background-color: #ccffff;
+  border-color: #ccffff;
+}
+
+@media only screen and (max-width: 425px) {
+  .button-wrapper {
+    padding-top: 57%;
+  }
+  .btn-primary {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-color: #53c0ab;
+  }
 }
 
 
@@ -151,35 +199,19 @@ header .container {
 .section-one {
   background-image: url(../img/section-one.png);
   background-repeat: no-repeat;
-  position: relative;
-  z-index: 0;
+  background-size: 100%;
   padding: 170px 0;
 }
 
-.section-one .container {
-  padding-top: 9rem;
-  height: 67rem;
-}
+.section-one .container {}
 
-.section-one img {
-  position: relative;
-  width: 111%;
-}
+.section-one img {}
 
 .margin-top {
   margin-top: 17rem;
 }
 
-.button {
-  border-radius: 3px;
-  color: #36a6be;
-  padding: 1.2em 5em;
-  margin: 1.5rem 0px 0.5rem;
-  font-weight: bold;
-}
-
 .white-border-box {
-  margin-top: 24rem;
   color: #ccffff;
   padding: 0 6rem 4rem 3rem;
   border-left: #ccffff 1px solid;
@@ -201,35 +233,14 @@ header .container {
 .section-two {
   background-image: url(../img/section-two.png);
   background-repeat: no-repeat;
+  background-size: 100%;
   z-index: 0;
   padding: 170px 0;
 }
 
 .section-two .container {
-  height: 147rem;
+  height: 55rem;
 }
-
-
-/*.section-two {
-  background-color: #4ab8af;
-  position: relative;
-  z-index: 1;
-  margin-bottom: 28rem;
-}
-
-.section-two:before {
-  background: inherit;
-  bottom: 0;
-  content: '';
-  display: block;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  right: 0;
-  transform: skewY(-10.5deg);
-  transform-origin: 100%;
-  z-index: -1;
-}*/
 
 .section-two h6 {
   color: #7158cc;
